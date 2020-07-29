@@ -1,0 +1,3 @@
+//moddir lib
+load_file("nrngui.hoc")
+load_file("openmodel.hoc")

@@ -1,0 +1,50 @@
+<html>
+<p>This is the readme for the model associated with the paper:
+</p>
+<p>Cohen CCH, Popovic MA, Klooster J, Weil M, Mobius W, Nave K, Kole MHP
+(2020) Saltatory Conduction along Myelinated Axons Involves a
+Periaxonal Nanocircuit. <a href="https://doi.org/10.1016/j.cell.2019.11.039">Cell</a>
+</p>
+<p>This NEURON code was contributed by CCH Cohen.
+</p>
+<p>Startup options:
+</p>
+<p>compilemod.hoc
+</p><ul>
+  <li>Compile or recompile mod files.
+  </li><li>Required for running any model.
+  </li><li>Run once after setup or download to a new machine.
+</li></ul>
+<p>openmodel.hoc
+</p><ul>
+  <li>View and test the model.
+  </li><li>Try different parameter combinations.
+  </li><li>Broadest option for model interaction.
+</li></ul>
+A sample screenshot of the model mid simulation:<p/>
+<img src="./screenshot.png" alt="screenshot" width="600">
+<p>resetmode.hoc
+</p><ul>
+  <li>Switch mode from passive to active and vice versa.
+</li></ul>
+<p>resetses.hoc
+</p><ul>
+  <li>Reset session data to mode-appropriate default options.
+</li></ul>
+<p>resetaxon.hoc
+</p><ul>
+  <li>Switch between model axon options. 
+  </li><li>Available options include no myelin, single cable and double cable.
+</li></ul>
+<p><em>modeltype</em>.type
+</p><ul>
+  <li>Describes current model setup. Composed of three parts separated by dashes.
+  </li><li>First part: active ("act") or passive ("pas").
+  </li><li>Second part: selected cellular location(s) of interest combination. SO = soma, AX = axon, DE = dendrite.
+  </li><li>Third part: axon model type. NOMY = no myelin, SC = single cable, DC = double cable, etc.
+  </li><li>Updated after opening openmodel.hoc.
+</li></ul>
+<p>Usage note: To restore colour mapping if reshaping the shapeplot, select "Shape Plot" by right clicking in the plot window.</p>
+
+</body>
+</html>
