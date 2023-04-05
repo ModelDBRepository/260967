@@ -24,7 +24,7 @@ mode = getvarp(ses, "mode.dat")
 setmaxform()
 setmaxformvec()
 has_data = getvarp(ses, "has_data.dat")
-setfilestr(mode)
+setfilestr(mode, has_data)
 loaddll()
 
 if (has_data) {
@@ -93,9 +93,9 @@ axontype = xred(axonqstr, axontype, 1, 4)
 writebit(ses, "axontype.dat", axontype)
 setparam()
 if (mode == 0) {
-	writevxplot(mode, getvarp(ses, "iamp-pas.dat"))
+	writevxplot(mode, getvarp(ses, "iamp-pas-def.dat”))
 } else if (mode == 1) {
-	writevxplot(mode, getvarp(ses, "iamp-act.dat"))
+	writevxplot(mode, getvarp(ses, "iamp-act-def.dat”))
 }
 
 if (axontype == 1) {
